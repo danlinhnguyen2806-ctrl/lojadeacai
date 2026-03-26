@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - Health Investment Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Your Health Investment Dashboard</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Monthly Calorie Intake</h2>
+            <div id="calorie-tracker">
+                <label for="calories">Calories Consumed:</label>
+                <input type="number" id="calories" name="calories" placeholder="Enter your calories here">
+                <button onclick="updateCalories()">Update</button>
+                <p>Your intake for this month: <span id="monthly-calories">0</span> kcal</p>
+            </div>
+        </section>
+        <section>
+            <h2>Protein Macros</h2>
+            <div id="protein-tracker">
+                <label for="protein">Protein Intake:</label>
+                <input type="number" id="protein" name="protein" placeholder="Enter your protein intake here">
+                <button onclick="updateProtein()">Update</button>
+                <p>Your protein intake for this month: <span id="monthly-protein">0</span> g</p>
+            </div>
+        </section>
+        <section>
+            <h2>Subscription Schedule Management</h2>
+            <div id="subscription-management">
+                <h3>Manage Your Deliveries</h3>
+                <button onclick="pauseDelivery()">Pause Delivery</button>
+                <label for="delivery-date">Change Delivery Date:</label>
+                <input type="date" id="delivery-date" name="delivery-date">
+                <button onclick="changeDeliveryDate()">Update Date</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Dashboard created on 2026-03-26 by danlinhnguyen2806-ctrl</p>
+    </footer>
+    <script>
+        function updateCalories() {
+            // Logic to update calorie intake
+        }
+        function updateProtein() {
+            // Logic to update protein intake
+        }
+        function pauseDelivery() {
+            // Logic to pause delivery
+        }
+        function changeDeliveryDate() {
+            // Logic to change delivery date
+        }
+    </script>
+</body>
+</html>
