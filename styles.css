@@ -1,0 +1,32 @@
+.container {
+    background-color: #F5D5E3;
+    color: #4A0E1F;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Playful Rounded', sans-serif;
+    color: #4A0E1F;
+}
+
+.button {
+    background-color: #7FD856;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #E8A035;
+}
+
+.footer {
+    background-color: #A39369;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
