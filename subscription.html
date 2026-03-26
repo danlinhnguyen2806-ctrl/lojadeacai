@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Health Subscription</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Daily Health Subscription</h1>
+    <form id="subscription-form">
+        <label for="goals">User Goals:</label>
+        <input type="text" id="goals" name="goals" required>
+
+        <label for="daily-kcal">Daily Kcal Intake:</label>
+        <input type="number" id="daily-kcal" name="daily-kcal" required>
+
+        <label for="allergies">Allergies:</label>
+        <input type="text" id="allergies" name="allergies">
+
+        <label for="toppings">Preferred Toppings:</label>
+        <input type="text" id="toppings" name="toppings" required>
+
+        <label for="weekly-schedule">Weekly Schedule:</label>
+        <textarea id="weekly-schedule" name="weekly-schedule" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="confirmation-message" style="display:none;">
+        <p>Thank you for your submission! Our nutrition team will design your formula within the next 1-2 days.</p>
+    </div>
+
+    <script>
+        const form = document.getElementById('subscription-form');
+        const confirmationMessage = document.getElementById('confirmation-message');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            confirmationMessage.style.display = 'block';
+            form.reset();
+        });
+    </script>
+</body>
+</html>
