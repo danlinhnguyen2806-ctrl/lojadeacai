@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functional Menu & Order</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Functional Menu & Order</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Categories</h2>
+            <ul>
+                <li><h3>Muscle Recovery</h3></li>
+                <li><h3>Glowing Skin</h3></li>
+                <li><h3>Gut Health</h3></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Build-Your-Own-Bowl</h2>
+            <form id="bowl-form">
+                <label for="base-texture">Select Base Texture:</label>
+                <select id="base-texture" name="base-texture">
+                    <option value="acai">Acai</option>
+                    <option value="pitaya">Pitaya</option>
+                    <option value="greek-yogurt">Greek Yogurt</option>
+                </select>
+
+                <fieldset>
+                    <legend>Boosters</legend>
+                    <label><input type="checkbox" name="boosters" value="protein"> Protein</label>
+                    <label><input type="checkbox" name="boosters" value="fiber"> Fiber</label>
+                    <label><input type="checkbox" name="boosters" value="omega"> Omega-3</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Toppings</legend>
+                    <label><input type="checkbox" name="toppings" value="granola"> Granola</label>
+                    <label><input type="checkbox" name="toppings" value="banana"> Banana</label>
+                    <label><input type="checkbox" name="toppings" value="berries"> Berries</label>
+                </fieldset>
+
+                <button type="submit">Calculate</button>
+            </form>
+            <div id="calorie-tracker">
+                <h2>Calorie/Macro Tracker</h2>
+                <p id="calorie-count">Calories: 0</p>
+                <p id="macro-count">Macros: Protein: 0g, Fiber: 0g, Omega-3: 0g</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Lojadeacai</p>
+    </footer>
+</body>
+</html>
